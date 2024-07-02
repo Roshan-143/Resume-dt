@@ -2,18 +2,19 @@
   margin: 0;
   padding: 0;
 }
-body {
+
+.list li {
+  list-style-position: inside;
+  list-style-type:circle;
+  padding: 5px;
+}
+@media only screen and (min-width:455px) {
+  body {
   font-family: sans-serif;
   background-color: black;
   color: white;
 }
-.list li {
-  list-style-position: inside;
-  list-style-type: square;
-  padding: 5px;
-}
-
-.all {
+ .all {
   width: 80vw;
   border: 2px outset pink;
   /* outline: 0.5rem solid khaki; */
@@ -23,7 +24,9 @@ body {
   margin: 5vh 8vw ;
   padding: 1rem;
   /* outline-offset: 0.5rem; */
+} 
 }
+
 @media only screen and (max-width:455px) {
   *{
     margin: 0;
